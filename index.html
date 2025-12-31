@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Chat Co.</title>
+
+    <!-- Bootstrap CSS CDN link copypasted to enable Bootstrap elements + customization-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- JavaScript for Bootstrap: link proposed by ChatGPT to solve the problem with the dropdown menu (History and Our Team links not working)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoY9FQ51Yk5jvlaR9GqQ8K/uxp1ylkzU9I+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom CSS link: linked to style.css file. Styling for all pages: colors, fonts and sizing -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation bar: template taken from Bootstrap STATIC NAVBAR examples-->
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact Us | AI CHAT Co.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <!--For the Social Media icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">AI Chat Co.</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="about.html#history">History</a></li>
+                                <li><a class="dropdown-item" href="about.html#team">Our Team</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="about.html">More information</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Beginning: Welcome section (Bootstrap5 HERO element used) + invented inspirational quotation: had to include "align-items-center" + "text center" so it appears in the middle.-->
+
+        <section id="services">
+            <div class="container mt-4 text-center">
+                <h1 class="display-4">Welcome to AI Chat Co.</h1>
+                <p class="lead">Your trusted partner in AI-powered communication solutions.</p>
+            </div>
+
+            <div class="container px-4 py-5">
+                <div class="row justify-content-center">
+                    <div class="col-xxl-8">
+                        <div class="row flex-lg-row-reverse align-items-center g-5 py-5 text-center text-lg-start">
+                            <div class="col-12 col-sm-10 col-lg-6 mx-auto">
+                                <img src="services.jpg" class="img-fluid rounded mx-auto d-block" alt="Services image"
+                                    width="700" height="500" loading="lazy">
+                            </div>
+                            <div class="col-12 col-lg-6 mx-auto">
+                                <h1 class="display-5 fw-bold lh-1 mb-3">AI customer services solutions</h1>
+                                <p class="lead">We provide intelligent AI chatbot solutions designed to enhance customer
+                                    engagement
+                                    and streamline business operations.</p>
+                                <div
+                                    class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3">
+                                    <button class="btn btn-primary btn-lg px-4">Services</button>
+                                    <button class="btn btn-outline-secondary btn-lg px-4">Quotations</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--3rd section: Accordion template. mx-auto added so it doesn't appear stuck to the right side-->
+
+        <section>
+            <div class="container col-xxl-8 px-4 py-5 mx-auto align-items-center text-center">
+                <h1>Why choosing AI Chat Co.?</h1><br><br>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Smarter Communication
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Smarter Communication.</strong> AI Chat Co. delivers natural, context-aware
+                                responses that feel less robotic and more like talking to a real assistant—improving
+                                user engagement and
+                                satisfaction.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Time and Cost Efficiency
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Time and Cost Efficiency.</strong> Automate customer support, content creation,
+                                and
+                                everyday tasks 24/7, reducing operational costs while increasing productivity without
+                                adding staff.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Expertise and Support
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Expertise and Support.</strong> Our team of AI specialists ensures your
+                                implementation
+                                is seamless, with ongoing support and updates to keep your system running at peak
+                                performance.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4th section: Carousel with some testimonials. Pictures + text added. Template obtained from Bootstrap documentation-->
+
+        <section id="carousel">
+            <div class="container col-xxl-8 px-4 py-5 text-center">
+                <h1>Our Customers</h1>
+                <p>Read some of the feedback from our regular customers.</p><br>
+            </div>
+
+            <div id="carouselExampleCaptions" class="carousel slide mx-auto" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="customer1.jpg" class="d-block w-100 carousel-img" alt="John">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>John, Kiwi Coffee Beans Ltd. Auckland, New Zealand</h5>
+                            <p>Thanks to AI Chat, I don't need to worry about customer's complains anymore! Score: 4.5/5
+                                stars.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="customer2.jpg" class="d-block w-100 carousel-img" alt="Vappu">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Ikkuinen Vappu Oy. Team. Kuopio, Finland.</h5>
+                            <p>The best automated customer service at the best price! Score: 4.8/5 stars.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="customer3.jpg" class="d-block w-100 carousel-img" alt="Gorlomi">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Gorlomi Motori S.r.l Team. Rimini, Italy.</h5>
+                            <p>Our automobile motor components have never been better cared for! Score: 5/5 stars.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+        </section>
+
+        <!--Final <body> section: logos+simple links-->
+
+        <section>
+            <div class="container px-4 py-5" id="about_us">
+                <h2 class="pb-2 border-bottom text-center mb-5">About Us</h2>
+                <div class="row text-center g-4">
+
+                    <div class="col-lg-4">
+                        <a href="mailto:contact@ai-chat.com" aria-label="Contact us via email">
+                            <i class="bi bi-person-lines-fill" style="font-size: 3rem; color: black;"></i>
+                        </a>
+                        <h2>CONTACT</h2>
+                        <p>Have access to our phone, email, and other contact details.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="#" aria-label="back_to_top">
+                            <i class="bi bi-file-arrow-up" style="font-size: 3rem; color: black;"></i>
+                        </a>
+                        <h2>BACK TO TOP</h2>
+                        <p>Have a look at our latest news, new services, and much more.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="https://www.youtube.com" target="_blank" aria-label="Media">
+                            <i class="bi bi-collection-play-fill" style="font-size: 3rem; color: black;"></i>
+                        </a>
+                        <h2>MEDIA</h2>
+                        <p>Take a look at our media content, including photos and videos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bootstrap JS CDN link that needs to be included just before the closing </body> tag-->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+            crossorigin="anonymous"></script>
+    </body>
+
+    <!-- Footer section: same style as in HTML1 and HTML 2 assignments: <ul>, <li>, etc. Bootstrap styling added as well: positioning and color.
+    Same for the other 3 files-->
+
+    <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-3">
+            © 2024 AI Chat Co. All rights reserved.
+        </div>
+    </footer>
+
+</html>
